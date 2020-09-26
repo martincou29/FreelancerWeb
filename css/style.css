@@ -1,15 +1,54 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-body{
-    font-size: 65.5%;
+body {
+    background: rgb(245, 247, 250);
+    background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    font-size: 1.6rem;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
     margin: 0;
+}
+
+/** Global */
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/**Header */
+
+.wrapper-navbar {
+    background-color: #ffffff;
+    height: 4rem;
+}
+
+.navbar{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.navbar a{
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    
 }
