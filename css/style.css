@@ -1,3 +1,7 @@
+:root{
+    --yellow: #FBB80D;
+}
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 
 html {
@@ -15,6 +19,7 @@ body {
     background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, #c3cfe2 100%);
     background-attachment: fixed;
     font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h2, h3 {
@@ -50,5 +55,49 @@ h1, h2, h3 {
     font-size: 2rem;
     text-decoration: none;
     display: block;
+    color: #000000;
+}
+
+/** Hero */
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    position: relative;
+    background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
     
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper-hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper-hero h2,
+.wrapper-hero p{
+    line-height: 6rem;
+    color: #ffffff;
+}
+
+
+.wrapper-hero .ubicacion i{
+    color: var(--yellow);
+    font-size: 3.2rem;
 }
