@@ -1,5 +1,6 @@
 :root{
     --yellow: #FBB80D;
+    --blue: #018C9E;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -34,6 +35,19 @@ h1, h2, h3 {
     margin: 0 auto;
 }
 
+.btn{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+}
+
+.btn-primary{
+    background-color: var(--blue);
+}
 
 /**Header */
 
@@ -84,7 +98,7 @@ h1, h2, h3 {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    height: 40rem;
+    height: 50rem;
     align-items: center;
     justify-content: center;
     
